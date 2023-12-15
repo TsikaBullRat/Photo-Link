@@ -7,4 +7,5 @@ concepts
 
 ## Notes:
 -   Where do we start:
+        navigator object
         
