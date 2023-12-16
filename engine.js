@@ -17,7 +17,8 @@ createServer(( req, res )=>{
             var bytes = new Uint8Array(data)
             var len = bytes.byteLength
             for(var i = 0; i < len; i++)binary += String.fromCharCode(bytes[i])
-            const image = 'data:image/jpeg;base64' + btoa(binary)
+            var image = "data:image/jpeg;base64" + btoa(binary)
+            console.log(image)
             writeFile(store, image, err=>console.error(err))
         })
     }else{
